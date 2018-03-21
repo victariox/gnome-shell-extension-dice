@@ -1,0 +1,14 @@
+{
+  "description": "Rolls the dices",
+  "name": "dice",
+  "settings-schema": "org.gnome.shell.extensions.dice",
+  "shell-version": [
+    "3.20",
+    "3.22",
+    "3.24",
+    "3.26"
+  ],
+  "url": "https://github.com/victariox/gnome-shell-extension-dice",
+  "uuid": "dice@victariox",
+  "version": 1
+}
