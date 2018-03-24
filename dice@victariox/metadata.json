@@ -1,5 +1,5 @@
 {
-  "description": "Rolls the dices",
+  "description": "Roll the dices",
   "name": "dice",
   "settings-schema": "org.gnome.shell.extensions.dice",
   "shell-version": [

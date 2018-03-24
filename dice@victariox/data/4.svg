@@ -16,9 +16,8 @@
    sodipodi:version="0.32"
    inkscape:version="0.92.2 2405546, 2018-03-11"
    version="1.0"
-   sodipodi:docname="6.svg"
+   sodipodi:docname="4.svg"
    inkscape:output_extension="org.inkscape.output.svg.inkscape"
-   inkscape:export-filename="/home/thayer/archlinux-logo-contest/archer-full-detail.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
   <defs
@@ -127,7 +126,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="13.046875"
-     inkscape:cx="17.69315"
+     inkscape:cx="16"
      inkscape:cy="21.106767"
      inkscape:document-units="px"
      inkscape:current-layer="g2210"
@@ -161,59 +160,45 @@
          id="g2210"
          transform="matrix(0.125,0,0,0.125,615.71887,519.21715)">
         <g
-           id="g2252"
-           transform="matrix(1.2455657,0,0,1.2455657,639.68455,76.062559)">
+           id="g2282"
+           transform="matrix(1.2430375,0,0,1.2430375,142.72366,107.86814)">
           <rect
              height="150"
-             id="rect2254"
+             id="rect2284"
              rx="50"
              ry="50"
              style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#bebebe;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none"
              width="150"
-             x="25.5"
-             y="290.36218" />
+             x="425.5"
+             y="265.36218" />
           <circle
              r="12.5"
              cy="227.36218"
              cx="325"
-             id="path2256"
+             id="path2286"
              style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none"
-             transform="translate(-261,101.5)" />
+             transform="translate(139,76.5)" />
           <circle
              r="12.5"
              cy="227.36218"
              cx="325"
-             id="path2258"
+             id="path2288"
              style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none"
-             transform="translate(-261,173.5)" />
+             transform="translate(139,148.5)" />
           <circle
              r="12.5"
              cy="227.36218"
              cx="325"
-             id="path2260"
+             id="path2290"
              style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none"
-             transform="translate(-261,137.5)" />
+             transform="translate(211,76.5)" />
           <circle
              r="12.5"
              cy="227.36218"
              cx="325"
-             id="path2262"
+             id="path2292"
              style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none"
-             transform="translate(-189,101.5)" />
-          <circle
-             r="12.5"
-             cy="227.36218"
-             cx="325"
-             id="path2264"
-             style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none"
-             transform="translate(-189,173.5)" />
-          <circle
-             r="12.5"
-             cy="227.36218"
-             cx="325"
-             id="path2266"
-             style="color:#000000;display:inline;overflow:visible;visibility:visible;opacity:1;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;marker-start:none;marker-mid:none;marker-end:none"
-             transform="translate(-189,137.5)" />
+             transform="translate(211,148.5)" />
         </g>
       </g>
     </g>

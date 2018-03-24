@@ -40,8 +40,9 @@ const Dice = new Lang.Class({
     let that = this;
     if(rolling_now == false) {
       rolling_now = true;
-      let roll_num = 3;
-      this.Timeout = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, St.get_slow_down_factor(),
+      var roll_num = 2;
+      that.toggleState();
+      this.Timeout = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 1,
       function () {
         if(roll_num == 0) {
           rolling_now = false;
