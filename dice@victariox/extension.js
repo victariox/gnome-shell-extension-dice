@@ -5,6 +5,9 @@ const Main = imports.ui.main;
 const Mainloop = imports.mainloop;
 const PanelMenu = imports.ui.panelMenu;
 const St = imports.gi.St;
+const Gio = imports.gi.Gio;
+const ExtensionUtils = imports.misc.extensionUtils;
+const Me = ExtensionUtils.getCurrentExtension();
 
 const indicator_name = "Dice";
 
@@ -14,18 +17,24 @@ const Dice = new Lang.Class({
   Name: indicator_name,
   Extends: PanelMenu.Button,
 
+
+ _getIcon: function(number){
+	 return Gio.icon_new_for_string(Me.dir.get_child('data').get_path() + "/" + number + ".svg");
+ },
+
   _init: function() {
     this.parent(null, indicator_name);
     this.actor.accessible_role = Atk.Role.BUTTON;
 
     this.left_dice = new St.Icon({
-      icon_name: this.get_random(),
       style_class: 'system-status-icon dice-attr'
     });
+    this.left_dice.gicon = this._getIcon(this.get_random());
+
     this.right_dice = new St.Icon({
-      icon_name: this.get_random(),
       style_class: 'system-status-icon dice-attr'
     });
+    this.right_dice.gicon = this._getIcon(this.get_random());
 
     this.box_container = new St.BoxLayout();
     this.box_container.add_actor(this.left_dice);
@@ -36,29 +45,21 @@ const Dice = new Lang.Class({
     this.actor.connect('button-press-event', Lang.bind(this, this.roll));
   },
 
-  roll: function() {
-    let that = this;
-    if(rolling_now == false) {
-      rolling_now = true;
-      var roll_num = 2;
-      that.toggleState();
-      this.Timeout = GLib.timeout_add_seconds(GLib.PRIORITY_DEFAULT, 1,
-      function () {
-        if(roll_num == 0) {
-          rolling_now = false;
-          return false;
-        } else {
-          that.toggleState();
-          roll_num--;
-          return true;
-        }
-      });
-    }
+  rollLeft: function(){
+    this.left_dice.gicon = this._getIcon(this.get_random()); 
   },
 
-  toggleState: function() {
-    this.left_dice.icon_name = this.get_random();
-    this.right_dice.icon_name = this.get_random();
+  rollRight: function(){
+    rolling_now = false;
+    this.right_dice.gicon = this._getIcon(this.get_random()); 
+  },
+
+  roll: function() {
+    if(! rolling_now){
+      rolling_now = true;
+      this.rollLeft(); 
+      Mainloop.timeout_add(500,() => this.rollRight());
+    }
   },
 
   get_random: function() {
