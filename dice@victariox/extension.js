@@ -69,12 +69,6 @@ const Dice = new Lang.Class({
 
 let dice_button;
 
-function init(extensionMeta)
-{
-  let theme = imports.gi.Gtk.IconTheme.get_default();
-  theme.append_search_path(extensionMeta.path + "/data");
-}
-
 function enable()
 {
   dice_button = new Dice();
@@ -85,4 +79,7 @@ function disable()
 {
   dice_button.destroy();
   dice_button = null;
+}
+
+function init() {
 }
